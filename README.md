@@ -81,6 +81,35 @@ npx hardhat run scripts/interact.ts
    - Principal
    - Reward based on the configured percentage
 
+## Manual Execution Steps
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/insanetushar/eth-bank.git
+cd eth-bank
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Compile the smart contract
+
+```bash
+npx hardhat compile
+```
+
+### 4. Execute the interaction script
+
+This script deploys the contract, funds the reward pool, performs a deposit, and withdraws funds with rewards.
+
+```bash
+npx hardhat run scripts/interact.ts
+```
+
 ## Events
 
 ```solidity
